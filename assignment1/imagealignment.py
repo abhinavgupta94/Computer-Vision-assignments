@@ -97,24 +97,22 @@ widths, heights = zip(*(i.size for i in images))
 total_width = sum(widths)
 max_height = max(heights)
 
-new_im = Image.new('RGB', (total_width, max_height))
-
+combinedImage = Image.new('RGB', (total_width, max_height))
 x_offset = 0
 for im in images:
-  new_im.paste(im, (x_offset,0))
+  combinedImage.paste(im, (x_offset,0))
   x_offset += im.size[0]
 
-new_im.save('test.jpg')
+combinedImage = np.array(combinedImage)
 
-new_im = cv2.imread('test.jpg')
 for i in range(len(inliers)):
-    cv2.line(new_im, (src_pts[inliers[i]][0], src_pts[inliers[i]][1]),
+    cv2.line(combinedImage, (src_pts[inliers[i]][0], src_pts[inliers[i]][1]),
              (dst_pts[inliers[i]][0] + np.float32(widths[0]), dst_pts[inliers[i]][1]), (0,0,255))
 
-cv2.imwrite("transformed.jpg",new_im)
-
+cv2.imwrite("transformed.jpg", combinedImage)
 
 '''
+
 FLANN_INDEX_KDTREE = 0
 index_params = dict(algorithm = FLANN_INDEX_KDTREE, trees = 5)
 search_params = dict(checks = 50)
