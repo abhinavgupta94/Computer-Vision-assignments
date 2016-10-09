@@ -14,8 +14,6 @@ img2 = cv2.cvtColor(img2,cv2.COLOR_BGR2GRAY)
 sift = cv2.SIFT()
 kp1, des1 = sift.detectAndCompute(img1,None)
 kp2, des2 = sift.detectAndCompute(img2,None)
-# print len(kp1),len(kp2)
-# print des1.shape
 
 draw1 = cv2.drawKeypoints(img1,kp1,flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
 draw2 = cv2.drawKeypoints(img2,kp2,flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
@@ -31,19 +29,14 @@ for m,n in matches:
     if m.distance < 0.9*n.distance:
         good.append(m)
 
-# print len(good)
 N = 100
 
 src_pts = np.float32([kp1[m.queryIdx].pt for m in good])
-# print src_pts[0],src_pts[1],src_pts[2]
 dst_pts = np.float32([kp2[m.trainIdx].pt for m in good])
-# print dst_pts[0], dst_pts[1], dst_pts[2]
-# print src_pts.shape, dst_pts.shape
 
 maxCount = 0
 for i in range(N):
     points = random.sample(range(len(src_pts)),3)
-    # print points
 
     X = []
     X_dash = []
@@ -55,8 +48,6 @@ for i in range(N):
 
     X = np.array(X)
     X_dash = np.array(X_dash)
-    # X_inv = np.linalg.inv(X)
-    # A = np.dot(X_inv,X_dash)
     try:
         np.linalg.solve(X, X_dash)
     except np.linalg.linalg.LinAlgError as err:
@@ -76,7 +67,6 @@ for i in range(N):
         if distance.euclidean(originalPoint, transformedPoint) < 10:
             count += 1
             temp.append(l)
-    # print count
 
     if count > maxCount:
         maxCount = count
@@ -100,8 +90,8 @@ max_height = max(heights)
 combinedImage = Image.new('RGB', (total_width, max_height))
 x_offset = 0
 for im in images:
-  combinedImage.paste(im, (x_offset,0))
-  x_offset += im.size[0]
+    combinedImage.paste(im, (x_offset,0))
+    x_offset += im.size[0]
 
 combinedImage = np.array(combinedImage)
 
@@ -111,38 +101,10 @@ for i in range(len(inliers)):
 
 cv2.imwrite("transformed.jpg", combinedImage)
 
-'''
+H = slope[:]
+for sl in range(len(H)):
+    H[sl].append(intercept[sl])
+H = np.array(H)
+final = cv2.warpAffine(img1, H, (img1.shape[1],img1.shape[0]))
 
-FLANN_INDEX_KDTREE = 0
-index_params = dict(algorithm = FLANN_INDEX_KDTREE, trees = 5)
-search_params = dict(checks = 50)
-
-flann = cv2.FlannBasedMatcher(index_params, search_params)
-
-matches = flann.knnMatch(des1,des2,k=2)
-
-src_pts = np.float32([ kp1[m.queryIdx].pt for m in good ]).reshape(-1,1,2)
-dst_pts = np.float32([ kp2[m.trainIdx].pt for m in good ]).reshape(-1,1,2)
-
-M, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, 5.0)
-matchesMask = mask.ravel().tolist()
-
-h,w = img1.shape
-pts = np.float32([[0,0],[0,h-1],[w-1,h-1],[w-1,0]]).reshape(-1,1,2)
-dst = cv2.perspectiveTransform(pts,M)
-
-img2 = cv2.polylines(img2,[np.int32(dst)],True,255,3,cv2.CV_AA)
-
-draw_params = dict(matchColor = (0,255,0), # draw matches in green color
-                   singlePointColor = None,
-                   matchesMask = matchesMask, # draw only inliers
-                   flags = 2)
-
-img3 = drawMatches(img1,kp1,img2,kp2,good)
-
-plt.imshow(img3, 'gray'),plt.show()
-
-'''
-# img3 = cv2.drawMatchesKnn(img1,kp1,img2,kp2,good,flags=2)
-
-# plt.imshow(img3),plt.show()
+cv2.imwrite("final.jpg", final)
