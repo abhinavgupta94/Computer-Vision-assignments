@@ -3,36 +3,35 @@ import numpy as np
 from scipy import signal
 
 # read image to array
-im = np.array(Image.open('scene.pgm').convert('L'),dtype=float)
-im /= 255
-print im.shape
-#width = int(raw_input("Enter width of the kernel:"))
+img = np.array(Image.open('scene.pgm').convert('L'),dtype=float)
+img /= 255
+width = int(raw_input("Enter width of the kernel:"))
+while width%2==0:
+    print "Enter odd number as width"
+    width = int(raw_input("Enter width of the kernel:"))
 
-def gaussianBlur(img, width):
-    blur = []
-    for i in range(width):
-        if i <= width / 2:
-            blur.append(i + 1)
-        else:
-            blur.append(width - i)
+blur = []
+for i in range(width):
+    if i <= width / 2:
+        blur.append((i + 1))
+    else:
+        blur.append((width - i))
 
-    blurarray = np.array(blur,dtype=float)
-    norm1 = blurarray / blurarray.sum()
 
-    print list(norm1)
+blurarray = np.array(blur,dtype=float)
+norm1 = blurarray / blurarray.sum()
 
-    filter2d = np.mat(norm1).T * np.mat(norm1)
-    print filter2d.shape
+print norm1
 
-    grad = signal.convolve2d(img, filter2d, mode='valid')
-    print grad.shape
+filter2d = np.matrix(norm1).T * np.matrix(norm1)
 
-    grad = (grad * 255).astype(np.uint8)
-    img1 = Image.fromarray(grad, 'L')
-    img1.save("filtered.jpg")
-    img1.show()
-    img = (img * 255).astype(np.uint8)
-    img2 = Image.fromarray(img, 'L')
-    img2.save("original.jpg")
-    img2.show()
-gaussianBlur(im, width=5)
+grad = signal.convolve2d(img, filter2d, mode='valid')
+grad = (grad * 255).astype(np.uint8)
+
+img1 = Image.fromarray(grad, 'L')
+img1.save("filtered.jpg")
+img1.show()
+# img = (img * 255).astype(np.uint8)
+# img2 = Image.fromarray(img, 'L')
+# img2.save("original.jpg")
+# img2.show()

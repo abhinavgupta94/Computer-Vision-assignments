@@ -1,4 +1,5 @@
 import numpy as np
+import scipy.linalg
 
 with open('world.txt') as f:
     x_world = np.array(map(float, f.readline().split()))
@@ -40,8 +41,13 @@ transposed = np.array(transposed).reshape(-1,3)
 
 U, s, V = np.linalg.svd(P)
 C = np.array(V[-1:]).ravel()
-C = [i/C[3] for i in range(len(C)-1)]
-# print C
+C = [C[i]/C[3] for i in range(len(C)-1)]
+print C
 
+q,r = scipy.linalg.rq(P, mode='economic')
 
+R = np.matrix(-1 * np.transpose(r)[:3]).T
+t = np.matrix(np.transpose(r)[3]).T
+C_t = np.linalg.solve(R,t)
+print C_t
 

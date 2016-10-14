@@ -2,15 +2,14 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.spatial import distance
-import scipy
 import random
 from PIL import Image
 
 
 img1 = cv2.imread('scene.pgm')
 img2 = cv2.imread('book.pgm')
-img1 = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
-img2 = cv2.cvtColor(img2,cv2.COLOR_BGR2GRAY)
+img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
+img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
 
 sift = cv2.SIFT()
 kp1, des1 = sift.detectAndCompute(img1,None)
@@ -77,21 +76,19 @@ for i in range(N):
 transformedInliers = []
 X = []
 X_dash = []
-for i in range(len(inliers)):
-    X.append([src_pts[inliers[j]][0], src_pts[inliers[j]][1], 0, 0, 1, 0])
-    X.append([0, 0, src_pts[inliers[j]][0], src_pts[inliers[j]][1], 0, 1])
-    X_dash.append([dst_pts[inliers[j]][0]])
-    X_dash.append([dst_pts[inliers[j]][1]])
 
-    # transformedPoint = np.dot(X,bestA)
-    # transformedInliers.extend((transformedPoint[0], transformedPoint[1]))
+for i in range(len(inliers)):
+    X.append([src_pts[inliers[i]][0], src_pts[inliers[i]][1], 0, 0, 1, 0])
+    X.append([0, 0, src_pts[inliers[i]][0], src_pts[inliers[i]][1], 0, 1])
+    X_dash.append([dst_pts[inliers[i]][0]])
+    X_dash.append([dst_pts[inliers[i]][1]])
 
 X = np.matrix(X)
 X_dash = np.matrix(X_dash)
 
-# X_T = np.transpose(X)
-# A = np.dot(np.dot(np.dot(X_T,X),X_T),X_dash)
-# A = np.linalg.solve(X, X_dash)
+A = np.linalg.lstsq(X, X_dash)
+# print bestA
+bestA = A[0]
 # print bestA
 
 images = map(Image.open, ['sift_img1.jpg', 'sift_img2.jpg'])
@@ -113,8 +110,6 @@ for i in range(len(inliers)):
              (dst_pts[inliers[i]][0] + np.float32(widths[0]), dst_pts[inliers[i]][1]), (0,0,255))
 
 cv2.imwrite("transformed.jpg", combinedImage)
-
-# pts = np.float32([kp1[m].pt for m in range(len(kp1))])
 
 bestA = np.array(bestA).ravel()
 H = []
