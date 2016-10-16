@@ -21,6 +21,7 @@ t_i = []
 for i in range(frames):
     t_i.append([x_sum[i]/total, y_sum[i]/total])
 
+print "Translation vector of first camera"
 print t_i[0]
 
 # Subtact each point with the centroid coordinates
@@ -46,16 +47,18 @@ for i in range(frames):
 W = np.matrix(W)
 # Singular Value Decomposition of W
 U, D, V = np.linalg.svd(W)
+
 # Calculate M(2*frames x 3) matrix by multiplying the first 3 columns of U with the first 3 eigenvalues
 M = [np.array(U.T[:3][i]).ravel() * D[i] for i in range(3)]
 M = np.matrix(M).T
-# Print affine camera matrix for first camera
+
+print "Affine camera matrix for first camera"
 print np.matrix([np.array(M[0]).ravel(), np.array(M[1]).ravel()])
 
 # Extract first 3 columns of V for calculating 3D world coordinates
 S = V[:3]
 
-# Print 3D coordinates(x,y,z) for first 10 world points
+print "3D coordinates(x,y,z) for first 10 world points"
 print np.array(S[0]).ravel()[:10]
 print np.array(S[1]).ravel()[:10]
 print np.array(S[2]).ravel()[:10]
@@ -65,5 +68,5 @@ print np.array(S[2]).ravel()[:10]
 fig = pylab.figure()
 ax = Axes3D(fig)
 ax.scatter(np.array(S[0]).ravel(), np.array(S[1]).ravel(), np.array(S[2]).ravel())
+pyplot.savefig("worldobject.jpg")
 # pyplot.show()
-pyplot.savefig("box.jpg")

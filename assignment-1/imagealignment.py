@@ -121,6 +121,7 @@ H = []
 H.append([bestA[0], bestA[1], bestA[4]])
 H.append([bestA[2], bestA[3], bestA[5]])
 H = np.matrix(H)
+print "H Matrix"
 print H
 
 # Affine transformation using the calculated H matrix

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9bbb6da-2cb3-476f-a32e-ddaeb91db910" name="Default" comment="complete assignment">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assignment-1/filtered.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assignment-1/final.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assignment-1/transformed.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assignment-1/Report.pages" afterPath="$PROJECT_DIR$/assignment-1/Report.pages" />
+    <list default="true" id="f9bbb6da-2cb3-476f-a32e-ddaeb91db910" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assignment-1/box.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assignment-1/original.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assignment-1/cameraparameters.py" afterPath="$PROJECT_DIR$/assignment-1/cameraparameters.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assignment-1/gaussianfilter.py" afterPath="$PROJECT_DIR$/assignment-1/gaussianfilter.py" />
@@ -46,11 +44,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gaussianfilter.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="master_script.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assignment-1/master_script.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gaussianfilter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment-1/gaussianfilter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            <state relative-caret-position="430">
+              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -61,8 +69,8 @@
       <file leaf-file-name="imagealignment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment-1/imagealignment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1312">
-              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+            <state relative-caret-position="462">
+              <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -73,8 +81,8 @@
       <file leaf-file-name="cameraparameters.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment-1/cameraparameters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="47" column="22" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="392">
+              <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -85,8 +93,8 @@
       <file leaf-file-name="motionstructure.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment-1/motionstructure.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="574">
+              <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -117,8 +125,8 @@
         <option value="$PROJECT_DIR$/assignment-1/master_script.sh" />
         <option value="$PROJECT_DIR$/assignment-1/imagealignment.py" />
         <option value="$PROJECT_DIR$/assignment-1/cameraparameters.py" />
-        <option value="$PROJECT_DIR$/assignment-1/motionstructure.py" />
         <option value="$PROJECT_DIR$/assignment-1/gaussianfilter.py" />
+        <option value="$PROJECT_DIR$/assignment-1/motionstructure.py" />
       </list>
     </option>
   </component>
@@ -208,7 +216,7 @@
       <recent name="$PROJECT_DIR$/assignment1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gaussianfilter">
+  <component name="RunManager" selected="Bash.master_script.sh">
     <configuration default="false" name="imagealignment" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -261,6 +269,17 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/assignment-1/motionstructure.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="master_script.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/assignment-1" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/assignment-1/master_script.sh" />
+      <option name="PARAMETERS" value="" />
+      <module name="CompVision" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -500,17 +519,19 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.gaussianfilter" />
       <item index="1" class="java.lang.String" itemvalue="Python.imagealignment" />
       <item index="2" class="java.lang.String" itemvalue="Python.cameraparameters" />
       <item index="3" class="java.lang.String" itemvalue="Python.motionstructure" />
+      <item index="4" class="java.lang.String" itemvalue="Bash.master_script.sh" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.motionstructure" />
-        <item index="1" class="java.lang.String" itemvalue="Python.cameraparameters" />
-        <item index="2" class="java.lang.String" itemvalue="Python.imagealignment" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Bash.master_script.sh" />
+        <item index="1" class="java.lang.String" itemvalue="Python.motionstructure" />
+        <item index="2" class="java.lang.String" itemvalue="Python.cameraparameters" />
+        <item index="3" class="java.lang.String" itemvalue="Python.imagealignment" />
       </list>
     </recent_temporary>
   </component>
@@ -605,7 +626,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476602803289</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add comments">
+      <created>1476608101639</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1476608101639</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -625,9 +653,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270142" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2931507" sideWeight="0.5105008" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.49353796" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32465753" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2931507" sideWeight="0.48949918" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2931507" sideWeight="0.48949918" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3739726" sideWeight="0.4951535" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -637,7 +666,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -655,7 +683,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="image transform with lines" />
     <MESSAGE value="complete assignment" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete assignment" />
+    <MESSAGE value="add comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -757,51 +786,51 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment-1/master_script.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment-1/imagealignment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1312">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assignment-1/cameraparameters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="47" column="22" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="392">
+          <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assignment-1/gaussianfilter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment-1/imagealignment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assignment-1/motionstructure.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="574">
+          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment-1/gaussianfilter.py">
+    <entry file="file://$PROJECT_DIR$/assignment-1/master_script.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="80">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

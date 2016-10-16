@@ -21,12 +21,12 @@ for i in range(width):
     else:
         blur.append(width - i)
 
-
 blurarray = np.array(blur)
 norm1 = blurarray / float(blurarray.sum())
 
 # Build 2D kernel from 1D by multiplying the 1D kernel with its transpose
 filter2d = np.matrix(norm1).T * np.matrix(norm1)
+print "2D gaussian kernel approximation"
 print filter2d
 
 # Do 2D convolution with valid boundary condition
@@ -38,7 +38,3 @@ grad = (grad * 255).astype(np.uint8)
 img1 = Image.fromarray(grad, 'L')
 img1.save("blurred.jpg")
 # img1.show()
-# img = (img * 255).astype(np.uint8)
-# img2 = Image.fromarray(img, 'L')
-# img2.save("original.jpg")
-# img2.show()

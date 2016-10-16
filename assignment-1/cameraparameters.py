@@ -51,6 +51,7 @@ U, s, V = np.linalg.svd(P)
 C = np.array(V[-1:]).ravel()
 # Convert homogeneous coordinates back to non-homogeneous coordinates
 C = np.array([round(C[i]/C[3]) for i in range(len(C)-1)]).reshape(3,-1)
+print "Camera world coordinates - 1st method"
 print C
 
 # Alternate method
@@ -62,4 +63,5 @@ R = np.matrix(np.transpose(r)[:3]).T
 t = np.matrix(np.transpose(r)[3]).T
 # Solve for world coordinates C_t(3x1) for t = -RC_T
 C_t = np.linalg.solve(-R,t)
+print "Camera world coordinates - 2nd method"
 print C_t
