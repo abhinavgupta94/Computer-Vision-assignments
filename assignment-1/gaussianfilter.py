@@ -5,17 +5,19 @@ from scipy import signal
 # read image to array
 img = np.array(Image.open('scene.pgm').convert('L'),dtype=float)
 img /= 255
+
 width = int(raw_input("Enter width of the kernel:"))
-while width%2==0:
+
+while width%2 == 0:
     print "Enter odd number as width"
     width = int(raw_input("Enter width of the kernel:"))
 
 blur = []
 for i in range(width):
     if i <= width / 2:
-        blur.append((i + 1))
+        blur.append(i + 1)
     else:
-        blur.append((width - i))
+        blur.append(width - i)
 
 
 blurarray = np.array(blur,dtype=float)
