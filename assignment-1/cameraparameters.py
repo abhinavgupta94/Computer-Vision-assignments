@@ -11,9 +11,12 @@ with open('image.txt') as f:
     y_local = np.array(map(float, f.readline().split()))
     z_local = np.array(map(float, f.readline().split()))
 
+# w array used for converting non-homogeneous matrix to homogeneous matrix
 w = np.ones(len(x_world))
+# Construct matrix A(20x12) to solve AP = 0
 A = []
 for i in range(len(x_world)):
+    # first, second, third represent the corresponding entries in matrix A for each row
     first = np.zeros(4)
     second = -w[i] * np.array([x_world[i],y_world[i],z_world[i],w[i]])
     third = y_local[i] * np.array([x_world[i],y_world[i],z_world[i],w[i]])
@@ -28,9 +31,12 @@ for i in range(len(x_world)):
     A.append(S)
 A = np.matrix(A)
 
+# Singular Value Decomposition of A
 U, s, V = np.linalg.svd(A)
+# Extract the eigenvector corresponding to the smallest eigenvalue and store the camera parameters in P(3x4)
 P = V[-1:].reshape(3,4)
 
+# Verify cross product of (x, PX)  = 0
 transposed = []
 for j in range(len(x_world)):
     X = np.array([x_world[j],y_world[j],z_world[j],w[j]])
@@ -39,15 +45,21 @@ for j in range(len(x_world)):
 transposed = np.array(transposed).reshape(-1,3)
 # print transposed
 
+# Singular Value Decomposition of P
 U, s, V = np.linalg.svd(P)
+# Calculate world coordinates of projection center of camera C(3x1)
 C = np.array(V[-1:]).ravel()
-C = [C[i]/C[3] for i in range(len(C)-1)]
+# Convert homogeneous coordinates back to non-homogeneous coordinates
+C = np.array([round(C[i]/C[3]) for i in range(len(C)-1)]).reshape(3,-1)
 print C
 
+# Alternate method
+# RQ decomposition of P to separate intrinsic parameters (q) and transformation parameters (r)
 q,r = scipy.linalg.rq(P, mode='economic')
 
-R = np.matrix(-1 * np.transpose(r)[:3]).T
+# R(3x3) is Rotation matrix and t(3x1) is translation matrix
+R = np.matrix(np.transpose(r)[:3]).T
 t = np.matrix(np.transpose(r)[3]).T
-C_t = np.linalg.solve(R,t)
+# Solve for world coordinates C_t(3x1) for t = -RC_T
+C_t = np.linalg.solve(-R,t)
 print C_t
-
