@@ -100,20 +100,28 @@ widths, heights = zip(*(i.size for i in images))
 total_width = sum(widths)
 max_height = max(heights)
 
-combinedImage = Image.new('RGB', (total_width, max_height))
+combinedImageBefore = Image.new('RGB', (total_width, max_height))
 x_offset = 0
 for im in images:
-    combinedImage.paste(im, (x_offset,0))
+    combinedImageBefore.paste(im, (x_offset,0))
     x_offset += im.size[0]
 
-combinedImage = np.array(combinedImage)
+combinedImageBefore = np.array(combinedImageBefore)
+combinedImageAfter = combinedImageBefore.copy()
 
-# Draw lines between matching features (inliers)
+# Draw lines between good features (before RANSAC)
+for i in range(len(good)):
+    cv2.line(combinedImageBefore, (src_pts[i][0], src_pts[i][1]),
+             (dst_pts[i][0] + np.float32(widths[0]), dst_pts[i][1]), (0,0,255))
+
+cv2.imwrite("featurematchingbefore.jpg", combinedImageBefore)
+
+# Draw lines between matching features (inliers) after RANSAC
 for i in range(len(inliers)):
-    cv2.line(combinedImage, (src_pts[inliers[i]][0], src_pts[inliers[i]][1]),
+    cv2.line(combinedImageAfter, (src_pts[inliers[i]][0], src_pts[inliers[i]][1]),
              (dst_pts[inliers[i]][0] + np.float32(widths[0]), dst_pts[inliers[i]][1]), (0,0,255))
 
-cv2.imwrite("featurematching.jpg", combinedImage)
+cv2.imwrite("featurematchingafter.jpg", combinedImageAfter)
 
 # Construct H matrix(2X3) from bestA
 bestA = np.array(bestA).ravel()

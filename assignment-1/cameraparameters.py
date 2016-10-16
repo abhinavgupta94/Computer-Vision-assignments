@@ -35,6 +35,8 @@ A = np.matrix(A)
 U, s, V = np.linalg.svd(A)
 # Extract the eigenvector corresponding to the smallest eigenvalue and store the camera parameters in P(3x4)
 P = V[-1:].reshape(3,4)
+print "Camera matrix P"
+print P
 
 # Verify cross product of (x, PX)  = 0
 transposed = []

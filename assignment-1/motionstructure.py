@@ -59,10 +59,10 @@ print np.matrix([np.array(M[0]).ravel(), np.array(M[1]).ravel()])
 S = V[:3]
 
 print "3D coordinates(x,y,z) for first 10 world points"
-print np.array(S[0]).ravel()[:10]
-print np.array(S[1]).ravel()[:10]
-print np.array(S[2]).ravel()[:10]
-# print zip(np.array(S[0]).ravel()[:10], np.array(S[1]).ravel()[:10], np.array(S[2]).ravel()[:10])
+# print np.array(S[0]).ravel()[:10]
+# print np.array(S[1]).ravel()[:10]
+# print np.array(S[2]).ravel()[:10]
+print zip(np.array(S[0]).ravel()[:10], np.array(S[1]).ravel()[:10], np.array(S[2]).ravel()[:10])
 
 # Plotting 3D world points
 fig = pylab.figure()

@@ -6,8 +6,8 @@ from scipy import signal
 img = np.array(Image.open('scene.pgm').convert('L'),dtype=float)
 img /= 255
 
-# width = int(raw_input("Enter width of the kernel:"))
-width = 5
+width = int(raw_input("Enter width of the kernel:"))
+# width = 3
 # Check for odd width of kernel
 while width%2 == 0:
     print "Enter odd number as width."
