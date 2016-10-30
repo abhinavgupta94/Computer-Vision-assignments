@@ -59,7 +59,7 @@ local function getMnistIterator(datasets)
     local listdatasets = {}
     for _, dataset in pairs(datasets) do
      --   local list = torch.range(1, dataset.data:size(1)):totable()
-       local list = torch.range(1, 50):totable()
+       local list = torch.range(1, 1000):totable()
         table.insert(listdatasets,
                     tnt.ListDataset{
                         list = list,

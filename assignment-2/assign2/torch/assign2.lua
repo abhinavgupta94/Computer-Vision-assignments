@@ -135,12 +135,19 @@ local nin
 if config.mnist == true then nin = 784 end
 if config.cifar == true then nin = 3072 end
 
--- local network = nn.Linear(nin, nout)
+-- local cnn = nn.Linear(nin, nout)
 
-local network = nn.Sequential()
-network:add(nn.Linear(nin, hidden1))
-network:add(nn.Tanh())
-network:add(nn.Linear(hidden1, nout))
+local cnn = nn.Sequential()
+cnn:add(nn.SpatialConvolution(3,16,5,5))
+cnn:add(nn.Tanh())
+cnn:add(nn.SpatialMaxPooling(2,2,2,2))
+cnn:add(nn.SpatialConvolution(16,128,5,5))
+cnn:add(nn.Tanh())
+cnn:add(nn.SpatialMaxPooling(2,2,2,2))
+cnn:add(nn.View(128*5*5))
+cnn:add(nn.Linear(128*5*5, 64))
+cnn:add(nn.Tanh())
+cnn:add(nn.Linear(64, nout))
 
 local criterion = nn.CrossEntropyCriterion()
 
@@ -183,16 +190,16 @@ for epoch = 1, epochs do
     local errors = 0
     local count = 0
     for d in trainiterator() do
-        network:forward(d.input)
-        criterion:forward(network.output, d.target)
-        network:zeroGradParameters()
-        criterion:backward(network.output, d.target)
-        network:backward(d.input, criterion.gradInput)
-        network:updateParameters(lr)
+        cnn:forward(d.input)
+        criterion:forward(cnn.output, d.target)
+        cnn:zeroGradParameters()
+        criterion:backward(cnn.output, d.target)
+        cnn:backward(d.input, criterion.gradInput)
+        cnn:updateParameters(lr)
 
         loss = loss + criterion.output --criterion already averages over minibatch
         count = count + 1
-        local _, pred = network.output:max(2)
+        local _, pred = cnn.output:max(2)
         errors = errors + (pred:size(1) - pred:eq(d.target):sum())
     end
     loss = loss / count
@@ -202,12 +209,12 @@ for epoch = 1, epochs do
     local validerrors = 0
     count = 0
     for d in validiterator() do
-        network:forward(d.input)
-        criterion:forward(network.output, d.target)
+        cnn:forward(d.input)
+        criterion:forward(cnn.output, d.target)
 
         validloss = validloss + criterion.output --criterion already averages over minibatch
         count = count + 1
-        local _, pred = network.output:max(2)
+        local _, pred = cnn.output:max(2)
         validerrors = validerrors + (pred:size(1) - pred:eq(d.target):sum())
     end
     validloss = validloss / count
@@ -220,9 +227,9 @@ end
 
 local testerrors = 0
 for d in testiterator() do
-    network:forward(d.input)
-    criterion:forward(network.output, d.target)
-    local _, pred = network.output:max(2)
+    cnn:forward(d.input)
+    criterion:forward(cnn.output, d.target)
+    local _, pred = cnn.output:max(2)
     testerrors = testerrors + (pred:size(1) - pred:eq(d.target):sum())
 end
 
@@ -230,7 +237,7 @@ print(string.format('| test | error: %2.4f', testerrors))
 
 --  code for plotting weights
 --[[
-weights = network.weight
+weights = cnn.weight
 n = weights:reshape(10,28,28)
 
 files = n[1]
