@@ -1,0 +1,217 @@
+Started training!
+	train | epoch = 1 | lr = 0.1000 | loss: 29293.0637 | error: 668.0000 - valid | validloss: 10181.8040 | validerror: 419.0000 | s/iter: 0.2010
+	train | epoch = 2 | lr = 0.1000 | loss: 3712.8518 | error: 244.0000 - valid | validloss: 2766.7456 | validerror: 228.0000 | s/iter: 0.1829
+	train | epoch = 3 | lr = 0.1000 | loss: 1273.6265 | error: 133.0000 - valid | validloss: 2527.4130 | validerror: 226.0000 | s/iter: 0.1890
+	train | epoch = 4 | lr = 0.1000 | loss: 1601.3950 | error: 156.0000 - valid | validloss: 2233.3753 | validerror: 201.0000 | s/iter: 0.1794
+	train | epoch = 5 | lr = 0.1000 | loss: 713.4778 | error: 88.0000 - valid | validloss: 1746.5079 | validerror: 171.0000 | s/iter: 0.1855
+	train | epoch = 6 | lr = 0.1000 | loss: 527.5201 | error: 86.0000 - valid | validloss: 1993.9952 | validerror: 211.0000 | s/iter: 0.1890
+	train | epoch = 7 | lr = 0.1000 | loss: 464.6825 | error: 92.0000 - valid | validloss: 1802.6563 | validerror: 193.0000 | s/iter: 0.1854
+	train | epoch = 8 | lr = 0.1000 | loss: 238.6802 | error: 54.0000 - valid | validloss: 1765.2389 | validerror: 198.0000 | s/iter: 0.1821
+	train | epoch = 9 | lr = 0.1000 | loss: 746.3244 | error: 100.0000 - valid | validloss: 3751.9471 | validerror: 274.0000 | s/iter: 0.1822
+	train | epoch = 10 | lr = 0.1000 | loss: 354.2497 | error: 62.0000 - valid | validloss: 1854.9411 | validerror: 195.0000 | s/iter: 0.1804
+	| test | error: 191.0000
+Started training!
+	train | epoch = 1 | lr = 0.1000 | loss: 64.8796 | error: 43.0000 - valid | validloss: 20685.1468 | validerror: 6954.0000 | s/iter: 0.9792
+	train | epoch = 2 | lr = 0.1000 | loss: 14671.3541 | error: 26.0000 - valid | validloss: 22151.6520 | validerror: 6878.0000 | s/iter: 0.9875
+	train | epoch = 3 | lr = 0.1000 | loss: 19053.0497 | error: 28.0000 - valid | validloss: 20575.2377 | validerror: 5673.0000 | s/iter: 0.9006
+	train | epoch = 4 | lr = 0.1000 | loss: 12373.6498 | error: 18.0000 - valid | validloss: 16194.0607 | validerror: 5246.0000 | s/iter: 0.9659
+	train | epoch = 5 | lr = 0.1000 | loss: 9386.8868 | error: 12.0000 - valid | validloss: 15390.5190 | validerror: 6269.0000 | s/iter: 0.9032
+	train | epoch = 6 | lr = 0.1000 | loss: 7582.5734 | error: 22.0000 - valid | validloss: 25863.8462 | validerror: 7828.0000 | s/iter: 0.8917
+	train | epoch = 7 | lr = 0.1000 | loss: 14390.5032 | error: 24.0000 - valid | validloss: 18583.1501 | validerror: 6385.0000 | s/iter: 0.8922
+	train | epoch = 8 | lr = 0.1000 | loss: 14692.9140 | error: 20.0000 - valid | validloss: 4741.7797 | validerror: 4068.0000 | s/iter: 0.8963
+	train | epoch = 9 | lr = 0.1000 | loss: 188.3231 | error: 1.0000 - valid | validloss: 4642.1204 | validerror: 3873.0000 | s/iter: 0.8996
+	train | epoch = 10 | lr = 0.1000 | loss: 0.0000 | error: 0.0000 - valid | validloss: 4642.1204 | validerror: 3873.0000 | s/iter: 0.8960
+	| test | error: 4095.0000
+
+Started training!
+	train | epoch = 1 | lr = 0.1000 | loss: 5.5752 | error: 698.0000 - valid | validloss: 7.7601 | validerror: 548.0000 | s/iter: 0.4165
+	train | epoch = 2 | lr = 0.1000 | loss: 9.9345 | error: 709.0000 - valid | validloss: 13.7427 | validerror: 660.0000 | s/iter: 0.3681
+	train | epoch = 3 | lr = 0.1000 | loss: 12.0517 | error: 695.0000 - valid | validloss: 13.0474 | validerror: 813.0000 | s/iter: 0.4952
+	train | epoch = 4 | lr = 0.1000 | loss: 12.0060 | error: 694.0000 - valid | validloss: 9.1808 | validerror: 849.0000 | s/iter: 0.4278
+	train | epoch = 5 | lr = 0.1000 | loss: 11.2823 | error: 653.0000 - valid | validloss: 5.7648 | validerror: 575.0000 | s/iter: 0.4284
+	train | epoch = 6 | lr = 0.1000 | loss: 8.3635 | error: 613.0000 - valid | validloss: 9.6513 | validerror: 685.0000 | s/iter: 0.3523
+	train | epoch = 7 | lr = 0.1000 | loss: 8.6425 | error: 635.0000 - valid | validloss: 10.3998 | validerror: 557.0000 | s/iter: 0.3504
+	train | epoch = 8 | lr = 0.1000 | loss: 6.7254 | error: 552.0000 - valid | validloss: 8.9408 | validerror: 760.0000 | s/iter: 0.3328
+	train | epoch = 9 | lr = 0.1000 | loss: 9.8200 | error: 623.0000 - valid | validloss: 12.0858 | validerror: 618.0000 | s/iter: 0.3492
+	train | epoch = 10 | lr = 0.1000 | loss: 9.8584 | error: 621.0000 - valid | validloss: 7.9613 | validerror: 561.0000 | s/iter: 0.3476
+	| test | error: 517.0000
+
+Started training!
+	train | epoch = 1 | lr = 10.0000 | loss: 3139.2579 | error: 909.0000 - valid | validloss: 6168.4628 | validerror: 893.0000 | s/iter: 0.3713
+	train | epoch = 2 | lr = 10.0000 | loss: 3969.0109 | error: 888.0000 - valid | validloss: 5060.6471 | validerror: 893.0000 | s/iter: 0.3302
+	train | epoch = 3 | lr = 10.0000 | loss: 3671.6374 | error: 883.0000 - valid | validloss: 3582.3952 | validerror: 860.0000 | s/iter: 0.3334
+	train | epoch = 4 | lr = 10.0000 | loss: 3246.8756 | error: 846.0000 - valid | validloss: 4519.9848 | validerror: 896.0000 | s/iter: 0.3614
+	train | epoch = 5 | lr = 10.0000 | loss: 3840.3475 | error: 883.0000 - valid | validloss: 3816.6018 | validerror: 861.0000 | s/iter: 0.3451
+	train | epoch = 6 | lr = 10.0000 | loss: 3966.5387 | error: 885.0000 - valid | validloss: 4403.5726 | validerror: 893.0000 | s/iter: 0.4450
+	train | epoch = 7 | lr = 10.0000 | loss: 3445.2636 | error: 850.0000 - valid | validloss: 3715.3545 | validerror: 818.0000 | s/iter: 0.3811
+	train | epoch = 8 | lr = 10.0000 | loss: 3907.3177 | error: 887.0000 - valid | validloss: 3977.0998 | validerror: 895.0000 | s/iter: 0.3700
+	train | epoch = 9 | lr = 10.0000 | loss: 3435.8520 | error: 885.0000 - valid | validloss: 2674.8150 | validerror: 837.0000 | s/iter: 0.3752
+	train | epoch = 10 | lr = 10.0000 | loss: 2420.2164 | error: 783.0000 - valid | validloss: 2469.2453 | validerror: 746.0000 | s/iter: 0.3648
+	| test | error: 745.0000
+	
+Started training!
+	train | epoch = 1 | lr = 0.1000 | loss: 2.2430 | error: 10325.0000 - valid | validloss: 2.1465 | validerror: 2508.0000 | s/iter: 34.2126
+	train | epoch = 2 | lr = 0.1000 | loss: 2.0810 | error: 9281.0000 - valid | validloss: 2.0863 | validerror: 2357.0000 | s/iter: 54.2699
+	train | epoch = 3 | lr = 0.1000 | loss: 2.0070 | error: 8858.0000 - valid | validloss: 1.9537 | validerror: 2160.0000 | s/iter: 35.4339
+	train | epoch = 4 | lr = 0.1000 | loss: 1.9532 | error: 8623.0000 - valid | validloss: 2.0911 | validerror: 2274.0000 | s/iter: 32.3099
+	train | epoch = 5 | lr = 0.1000 | loss: 1.8134 | error: 8008.0000 - valid | validloss: 1.7031 | validerror: 1923.0000 | s/iter: 32.1239
+	train | epoch = 6 | lr = 0.1000 | loss: 1.7367 | error: 7644.0000 - valid | validloss: 1.7757 | validerror: 1943.0000 | s/iter: 30.8007
+	train | epoch = 7 | lr = 0.1000 | loss: 1.7080 | error: 7477.0000 - valid | validloss: 1.7801 | validerror: 1938.0000 | s/iter: 28.5090
+	train | epoch = 8 | lr = 0.1000 | loss: 1.6800 | error: 7274.0000 - valid | validloss: 1.6605 | validerror: 1807.0000 | s/iter: 28.5091
+	train | epoch = 9 | lr = 0.1000 | loss: 1.6190 | error: 7053.0000 - valid | validloss: 1.6619 | validerror: 1833.0000 | s/iter: 29.2602
+	train | epoch = 10 | lr = 0.1000 | loss: 1.6189 | error: 7066.0000 - valid | validloss: 1.6768 | validerror: 1790.0000 | s/iter: 28.1234
+	| test | error: 1788.0000
+
+
+nn.Sequential {
+  [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> (8) -> (9) -> (10) -> output]
+  (1): nn.SpatialConvolution(3 -> 16, 5x5)
+  (2): nn.Tanh
+  (3): nn.SpatialMaxPooling(2x2, 2,2)
+  (4): nn.SpatialConvolution(16 -> 128, 5x5)
+  (5): nn.Tanh
+  (6): nn.SpatialMaxPooling(2x2, 2,2)
+  (7): nn.View(3200)
+  (8): nn.Linear(3200 -> 64)
+  (9): nn.Tanh
+  (10): nn.Linear(64 -> 10)
+}	
+{	
+  gradInput : DoubleTensor - size: 88x3x32x32	
+  modules : 	
+    {	
+      1 : 	
+        nn.SpatialConvolution(3 -> 16, 5x5)	
+        {	
+          padW : 0	
+          nInputPlane : 3	
+          output : DoubleTensor - size: 72x16x28x28	
+          gradInput : DoubleTensor - size: 88x3x32x32	
+          _type : torch.DoubleTensor	
+          dH : 1	
+          dW : 1	
+          nOutputPlane : 16	
+          padH : 0	
+          kH : 5	
+          finput : DoubleTensor - size: 72x75x784	
+          weight : DoubleTensor - size: 16x3x5x5	
+          gradWeight : DoubleTensor - size: 16x3x5x5	
+          fgradInput : DoubleTensor - size: 88x75x784	
+          kW : 5	
+          bias : DoubleTensor - size: 16	
+          gradBias : DoubleTensor - size: 16	
+        }	
+      2 : 	
+        nn.Tanh	
+        {	
+          gradInput : DoubleTensor - size: 88x16x28x28	
+          _type : torch.DoubleTensor	
+          output : DoubleTensor - size: 72x16x28x28	
+        }	
+      3 : 	
+        nn.SpatialMaxPooling(2x2, 2,2)	
+        {	
+          dH : 2	
+          dW : 2	
+          kW : 2	
+          gradInput : DoubleTensor - size: 88x16x28x28	
+          iwidth : 28	
+          indices : DoubleTensor - size: 72x16x14x14	
+          output : DoubleTensor - size: 72x16x14x14	
+          _type : torch.DoubleTensor	
+          padH : 0	
+          ceil_mode : false	
+          iheight : 28	
+          kH : 2	
+          padW : 0	
+        }	
+      4 : 	
+        nn.SpatialConvolution(16 -> 128, 5x5)	
+        {	
+          padW : 0	
+          nInputPlane : 16	
+          output : DoubleTensor - size: 72x128x10x10	
+          gradInput : DoubleTensor - size: 88x16x14x14	
+          _type : torch.DoubleTensor	
+          dH : 1	
+          dW : 1	
+          nOutputPlane : 128	
+          padH : 0	
+          kH : 5	
+          finput : DoubleTensor - size: 72x400x100	
+          weight : DoubleTensor - size: 128x16x5x5	
+          gradWeight : DoubleTensor - size: 128x16x5x5	
+          fgradInput : DoubleTensor - size: 88x400x100	
+          kW : 5	
+          bias : DoubleTensor - size: 128	
+          gradBias : DoubleTensor - size: 128	
+        }	
+      5 : 	
+        nn.Tanh	
+        {	
+          gradInput : DoubleTensor - size: 88x128x10x10	
+          _type : torch.DoubleTensor	
+          output : DoubleTensor - size: 72x128x10x10	
+        }	
+      6 : 	
+        nn.SpatialMaxPooling(2x2, 2,2)	
+        {	
+          dH : 2	
+          dW : 2	
+          kW : 2	
+          gradInput : DoubleTensor - size: 88x128x10x10	
+          iwidth : 10	
+          indices : DoubleTensor - size: 72x128x5x5	
+          output : DoubleTensor - size: 72x128x5x5	
+          _type : torch.DoubleTensor	
+          padH : 0	
+          ceil_mode : false	
+          iheight : 10	
+          kH : 2	
+          padW : 0	
+        }	
+      7 : 	
+        nn.View(3200)	
+        {	
+          _type : torch.DoubleTensor	
+          output : DoubleTensor - size: 72x3200	
+          gradInput : DoubleTensor - size: 88x128x5x5	
+          size : LongStorage - size: 1	
+          numElements : 3200	
+        }	
+      8 : 	
+        nn.Linear(3200 -> 64)	
+        {	
+          gradBias : DoubleTensor - size: 64	
+          weight : DoubleTensor - size: 64x3200	
+          _type : torch.DoubleTensor	
+          output : DoubleTensor - size: 72x64	
+          gradInput : DoubleTensor - size: 88x3200	
+          addBuffer : DoubleTensor - size: 72	
+          bias : DoubleTensor - size: 64	
+          gradWeight : DoubleTensor - size: 64x3200	
+        }	
+      9 : 	
+        nn.Tanh	
+        {	
+          gradInput : DoubleTensor - size: 88x64	
+          _type : torch.DoubleTensor	
+          output : DoubleTensor - size: 72x64	
+        }	
+      10 : 	
+        nn.Linear(64 -> 10)	
+        {	
+          gradBias : DoubleTensor - size: 10	
+          weight : DoubleTensor - size: 10x64	
+          _type : torch.DoubleTensor	
+          output : DoubleTensor - size: 72x10	
+          gradInput : DoubleTensor - size: 88x64	
+          addBuffer : DoubleTensor - size: 72	
+          bias : DoubleTensor - size: 10	
+          gradWeight : DoubleTensor - size: 10x64	
+        }	
+    }	
+  _type : torch.DoubleTensor	
+  output : DoubleTensor - size: 72x10	
+}	
+ 258058
