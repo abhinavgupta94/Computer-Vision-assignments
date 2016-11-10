@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  3 NOV 2016 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  3 NOV 2016 23:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -172,6 +172,9 @@ LaTeX Warning: Label `fig5' multiply defined.
 
 LaTeX Warning: Label `fig5' multiply defined.
 
+
+LaTeX Warning: Label `fig5' multiply defined.
+
 )
 \openout1 = `Writeup.aux'.
 
@@ -328,70 +331,82 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 46--56
 []$[]$ $[]$ 
  []
 
-<assign2/torch/outputLRpoint1.png, id=17, 946.53625pt x 165.61874pt>
+<assign2/torch/weight50-1000.png, id=17, 985.6825pt x 168.63pt>
+File: assign2/torch/weight50-1000.png Graphic file (type png)
+
+<use assign2/torch/weight50-1000.png>
+Package pdftex.def Info: assign2/torch/weight50-1000.png used on input line 59.
+
+(pdftex.def)             Requested size: 492.84004pt x 84.31479pt.
+
+Overfull \hbox (23.08502pt too wide) in paragraph at lines 59--60
+ [][] 
+ []
+
+<assign2/torch/outputLRpoint1.png, id=18, 946.53625pt x 165.61874pt>
 File: assign2/torch/outputLRpoint1.png Graphic file (type png)
 
 <use assign2/torch/outputLRpoint1.png>
-Package pdftex.def Info: assign2/torch/outputLRpoint1.png used on input line 61
+Package pdftex.def Info: assign2/torch/outputLRpoint1.png used on input line 67
 .
 (pdftex.def)             Requested size: 473.26697pt x 82.80916pt.
 
-Overfull \hbox (3.51195pt too wide) in paragraph at lines 61--62
+Overfull \hbox (3.51195pt too wide) in paragraph at lines 67--68
  [][] 
  []
 
-<assign2/torch/outputLR10.png, id=18, 992.70876pt x 167.62625pt>
+<assign2/torch/outputLR10.png, id=19, 992.70876pt x 167.62625pt>
 File: assign2/torch/outputLR10.png Graphic file (type png)
 
 <use assign2/torch/outputLR10.png>
-Package pdftex.def Info: assign2/torch/outputLR10.png used on input line 68.
+Package pdftex.def Info: assign2/torch/outputLR10.png used on input line 74.
 (pdftex.def)             Requested size: 496.35316pt x 83.81291pt.
 
-Overfull \hbox (26.59814pt too wide) in paragraph at lines 68--69
- [][] 
- []
-
-<assign2/torch/outputCNN.png, id=19, 963.6pt x 166.6225pt>
-File: assign2/torch/outputCNN.png Graphic file (type png)
-
-<use assign2/torch/outputCNN.png>
-Package pdftex.def Info: assign2/torch/outputCNN.png used on input line 75.
-(pdftex.def)             Requested size: 481.79883pt x 83.31104pt.
-
-Overfull \hbox (12.04381pt too wide) in paragraph at lines 75--76
+Overfull \hbox (26.59814pt too wide) in paragraph at lines 74--75
  [][] 
  []
 
 [2 <./assign2/torch/output50.png> <./assign2/torch/weight_1000.png (PNG copy)> 
-<./assign2/torch/weight_50.png (PNG copy)> <./assign2/torch/outputLRpoint1.png>
- <./assign2/torch/outputLR10.png>]
-<assign2/torch/weightCNN.png, id=26, 638.385pt x 322.20375pt>
+<./assign2/torch/weight_50.png (PNG copy)> <./assign2/torch/weight50-1000.png> 
+<./assign2/torch/outputLRpoint1.png>]
+<assign2/torch/outputCNN.png, id=26, 968.61874pt x 319.1925pt>
+File: assign2/torch/outputCNN.png Graphic file (type png)
+
+<use assign2/torch/outputCNN.png>
+Package pdftex.def Info: assign2/torch/outputCNN.png used on input line 82.
+(pdftex.def)             Requested size: 484.30818pt x 159.59586pt.
+
+Overfull \hbox (14.55316pt too wide) in paragraph at lines 82--83
+ [][] 
+ []
+
+<assign2/torch/weightCNN.png, id=27, 423.5825pt x 212.795pt>
 File: assign2/torch/weightCNN.png Graphic file (type png)
 
 <use assign2/torch/weightCNN.png>
-Package pdftex.def Info: assign2/torch/weightCNN.png used on input line 81.
-(pdftex.def)             Requested size: 319.19171pt x 161.10147pt.
- [3 <./assign2/torch/outputCNN.png> <./assign2/torch/weightCNN.png>] (./Writeup
-.aux)
+Package pdftex.def Info: assign2/torch/weightCNN.png used on input line 88.
+(pdftex.def)             Requested size: 211.79073pt x 106.39723pt.
+ [3 <./assign2/torch/outputLR10.png> <./assign2/torch/outputCNN.png> <./assign2
+/torch/weightCNN.png>] [4] (./Writeup.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3434 strings out of 493014
- 52678 string characters out of 6133351
- 112785 words of memory out of 5000000
- 6920 multiletter control sequences out of 15000+600000
+ 3439 strings out of 493014
+ 52838 string characters out of 6133351
+ 113785 words of memory out of 5000000
+ 6924 multiletter control sequences out of 15000+600000
  10556 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,39p,239b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,9n,39p,429b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Writeup.pdf (3 pages, 713754 bytes).
+Output written on Writeup.pdf (4 pages, 861360 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

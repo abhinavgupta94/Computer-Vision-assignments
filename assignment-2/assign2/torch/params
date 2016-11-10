@@ -1,3 +1,4 @@
+1000-1000
 Started training!
 	train | epoch = 1 | lr = 0.1000 | loss: 29293.0637 | error: 668.0000 - valid | validloss: 10181.8040 | validerror: 419.0000 | s/iter: 0.2010
 	train | epoch = 2 | lr = 0.1000 | loss: 3712.8518 | error: 244.0000 - valid | validloss: 2766.7456 | validerror: 228.0000 | s/iter: 0.1829
@@ -10,6 +11,7 @@ Started training!
 	train | epoch = 9 | lr = 0.1000 | loss: 746.3244 | error: 100.0000 - valid | validloss: 3751.9471 | validerror: 274.0000 | s/iter: 0.1822
 	train | epoch = 10 | lr = 0.1000 | loss: 354.2497 | error: 62.0000 - valid | validloss: 1854.9411 | validerror: 195.0000 | s/iter: 0.1804
 	| test | error: 191.0000
+50-full
 Started training!
 	train | epoch = 1 | lr = 0.1000 | loss: 64.8796 | error: 43.0000 - valid | validloss: 20685.1468 | validerror: 6954.0000 | s/iter: 0.9792
 	train | epoch = 2 | lr = 0.1000 | loss: 14671.3541 | error: 26.0000 - valid | validloss: 22151.6520 | validerror: 6878.0000 | s/iter: 0.9875
@@ -22,7 +24,32 @@ Started training!
 	train | epoch = 9 | lr = 0.1000 | loss: 188.3231 | error: 1.0000 - valid | validloss: 4642.1204 | validerror: 3873.0000 | s/iter: 0.8996
 	train | epoch = 10 | lr = 0.1000 | loss: 0.0000 | error: 0.0000 - valid | validloss: 4642.1204 | validerror: 3873.0000 | s/iter: 0.8960
 	| test | error: 4095.0000
-
+50-1000
+	train | epoch = 1 | lr = 0.1000 | loss: 73.5349 | error: 47.0000 - valid | validloss: 27484.5521 | validerror: 895.0000 | s/iter: 0.1747
+	train | epoch = 2 | lr = 0.1000 | loss: 22035.7225 | error: 42.0000 - valid | validloss: 35853.7824 | validerror: 749.0000 | s/iter: 0.1443
+	train | epoch = 3 | lr = 0.1000 | loss: 40857.0383 | error: 29.0000 - valid | validloss: 27193.6502 | validerror: 602.0000 | s/iter: 0.1237
+	train | epoch = 4 | lr = 0.1000 | loss: 29051.9468 | error: 22.0000 - valid | validloss: 18001.1229 | validerror: 695.0000 | s/iter: 0.1164
+	train | epoch = 5 | lr = 0.1000 | loss: 12262.9761 | error: 21.0000 - valid | validloss: 10213.0758 | validerror: 536.0000 | s/iter: 0.1145
+	train | epoch = 6 | lr = 0.1000 | loss: 1500.9622 | error: 7.0000 - valid | validloss: 7618.1303 | validerror: 468.0000 | s/iter: 0.1500
+	train | epoch = 7 | lr = 0.1000 | loss: 644.9726 | error: 6.0000 - valid | validloss: 7345.0219 | validerror: 483.0000 | s/iter: 0.1533
+	train | epoch = 8 | lr = 0.1000 | loss: 18.0922 | error: 2.0000 - valid | validloss: 5935.0690 | validerror: 443.0000 | s/iter: 0.1334
+	train | epoch = 9 | lr = 0.1000 | loss: 0.0000 | error: 0.0000 - valid | validloss: 5935.0690 | validerror: 443.0000 | s/iter: 0.1152
+	train | epoch = 10 | lr = 0.1000 | loss: 0.0000 | error: 0.0000 - valid | validloss: 5935.0690 | validerror: 443.0000 | s/iter: 0.1176
+	| test | error: 449.0000
+1000-full
+Started training!
+	train | epoch = 1 | lr = 0.1000 | loss: 27392.7708 | error: 658.0000 - valid | validloss: 7288.9318 | validerror: 3648.0000 | s/iter: 1.3716
+	train | epoch = 2 | lr = 0.1000 | loss: 3272.0925 | error: 218.0000 - valid | validloss: 2743.0645 | validerror: 2340.0000 | s/iter: 1.1923
+	train | epoch = 3 | lr = 0.1000 | loss: 1353.0051 | error: 142.0000 - valid | validloss: 1759.4810 | validerror: 1820.0000 | s/iter: 1.0918
+	train | epoch = 4 | lr = 0.1000 | loss: 776.5871 | error: 105.0000 - valid | validloss: 1953.4365 | validerror: 2008.0000 | s/iter: 1.5037
+	train | epoch = 5 | lr = 0.1000 | loss: 625.1865 | error: 90.0000 - valid | validloss: 2077.8495 | validerror: 2084.0000 | s/iter: 1.1451
+	train | epoch = 6 | lr = 0.1000 | loss: 985.9373 | error: 142.0000 - valid | validloss: 1906.0967 | validerror: 2070.0000 | s/iter: 0.9830
+	train | epoch = 7 | lr = 0.1000 | loss: 425.3473 | error: 74.0000 - valid | validloss: 1596.9798 | validerror: 1724.0000 | s/iter: 0.9958
+	train | epoch = 8 | lr = 0.1000 | loss: 270.6816 | error: 65.0000 - valid | validloss: 1890.4856 | validerror: 2058.0000 | s/iter: 1.0567
+	train | epoch = 9 | lr = 0.1000 | loss: 354.9495 | error: 66.0000 - valid | validloss: 1605.1885 | validerror: 1785.0000 | s/iter: 1.0206
+	train | epoch = 10 | lr = 0.1000 | loss: 509.2045 | error: 72.0000 - valid | validloss: 2145.0582 | validerror: 2308.0000 | s/iter: 0.9980
+	| test | error: 2441.0000
+hidden-0.1
 Started training!
 	train | epoch = 1 | lr = 0.1000 | loss: 5.5752 | error: 698.0000 - valid | validloss: 7.7601 | validerror: 548.0000 | s/iter: 0.4165
 	train | epoch = 2 | lr = 0.1000 | loss: 9.9345 | error: 709.0000 - valid | validloss: 13.7427 | validerror: 660.0000 | s/iter: 0.3681
@@ -35,7 +62,7 @@ Started training!
 	train | epoch = 9 | lr = 0.1000 | loss: 9.8200 | error: 623.0000 - valid | validloss: 12.0858 | validerror: 618.0000 | s/iter: 0.3492
 	train | epoch = 10 | lr = 0.1000 | loss: 9.8584 | error: 621.0000 - valid | validloss: 7.9613 | validerror: 561.0000 | s/iter: 0.3476
 	| test | error: 517.0000
-
+hidden-10
 Started training!
 	train | epoch = 1 | lr = 10.0000 | loss: 3139.2579 | error: 909.0000 - valid | validloss: 6168.4628 | validerror: 893.0000 | s/iter: 0.3713
 	train | epoch = 2 | lr = 10.0000 | loss: 3969.0109 | error: 888.0000 - valid | validloss: 5060.6471 | validerror: 893.0000 | s/iter: 0.3302
@@ -48,19 +75,29 @@ Started training!
 	train | epoch = 9 | lr = 10.0000 | loss: 3435.8520 | error: 885.0000 - valid | validloss: 2674.8150 | validerror: 837.0000 | s/iter: 0.3752
 	train | epoch = 10 | lr = 10.0000 | loss: 2420.2164 | error: 783.0000 - valid | validloss: 2469.2453 | validerror: 746.0000 | s/iter: 0.3648
 	| test | error: 745.0000
-	
+CNN
 Started training!
-	train | epoch = 1 | lr = 0.1000 | loss: 2.2430 | error: 10325.0000 - valid | validloss: 2.1465 | validerror: 2508.0000 | s/iter: 34.2126
-	train | epoch = 2 | lr = 0.1000 | loss: 2.0810 | error: 9281.0000 - valid | validloss: 2.0863 | validerror: 2357.0000 | s/iter: 54.2699
-	train | epoch = 3 | lr = 0.1000 | loss: 2.0070 | error: 8858.0000 - valid | validloss: 1.9537 | validerror: 2160.0000 | s/iter: 35.4339
-	train | epoch = 4 | lr = 0.1000 | loss: 1.9532 | error: 8623.0000 - valid | validloss: 2.0911 | validerror: 2274.0000 | s/iter: 32.3099
-	train | epoch = 5 | lr = 0.1000 | loss: 1.8134 | error: 8008.0000 - valid | validloss: 1.7031 | validerror: 1923.0000 | s/iter: 32.1239
-	train | epoch = 6 | lr = 0.1000 | loss: 1.7367 | error: 7644.0000 - valid | validloss: 1.7757 | validerror: 1943.0000 | s/iter: 30.8007
-	train | epoch = 7 | lr = 0.1000 | loss: 1.7080 | error: 7477.0000 - valid | validloss: 1.7801 | validerror: 1938.0000 | s/iter: 28.5090
-	train | epoch = 8 | lr = 0.1000 | loss: 1.6800 | error: 7274.0000 - valid | validloss: 1.6605 | validerror: 1807.0000 | s/iter: 28.5091
-	train | epoch = 9 | lr = 0.1000 | loss: 1.6190 | error: 7053.0000 - valid | validloss: 1.6619 | validerror: 1833.0000 | s/iter: 29.2602
-	train | epoch = 10 | lr = 0.1000 | loss: 1.6189 | error: 7066.0000 - valid | validloss: 1.6768 | validerror: 1790.0000 | s/iter: 28.1234
-	| test | error: 1788.0000
+	train | epoch = 1 | lr = 0.1000 | loss: 2.2465 | error: 10378.0000 - valid | validloss: 2.1111 | validerror: 2294.0000 | s/iter: 33.8550
+	train | epoch = 2 | lr = 0.1000 | loss: 2.0919 | error: 9353.0000 - valid | validloss: 2.1079 | validerror: 2388.0000 | s/iter: 36.6925
+	train | epoch = 3 | lr = 0.1000 | loss: 2.0346 | error: 9157.0000 - valid | validloss: 1.9103 | validerror: 2136.0000 | s/iter: 33.2089
+	train | epoch = 4 | lr = 0.1000 | loss: 1.9257 | error: 8463.0000 - valid | validloss: 1.7753 | validerror: 1955.0000 | s/iter: 32.0502
+	train | epoch = 5 | lr = 0.1000 | loss: 1.8210 | error: 7948.0000 - valid | validloss: 1.7924 | validerror: 1973.0000 | s/iter: 27.6897
+	train | epoch = 6 | lr = 0.1000 | loss: 1.8046 | error: 7880.0000 - valid | validloss: 1.7019 | validerror: 1899.0000 | s/iter: 27.6299
+	train | epoch = 7 | lr = 0.1000 | loss: 1.7199 | error: 7563.0000 - valid | validloss: 1.6981 | validerror: 1868.0000 | s/iter: 28.3324
+	train | epoch = 8 | lr = 0.1000 | loss: 1.6815 | error: 7426.0000 - valid | validloss: 1.6792 | validerror: 1849.0000 | s/iter: 27.4099
+	train | epoch = 9 | lr = 0.1000 | loss: 1.6296 | error: 7111.0000 - valid | validloss: 1.6116 | validerror: 1791.0000 | s/iter: 32.0081
+	train | epoch = 10 | lr = 0.1000 | loss: 1.5846 | error: 6908.0000 - valid | validloss: 1.5687 | validerror: 1727.0000 | s/iter: 26.6563
+	train | epoch = 11 | lr = 0.1000 | loss: 1.5979 | error: 6947.0000 - valid | validloss: 1.6024 | validerror: 1761.0000 | s/iter: 26.3530
+	train | epoch = 12 | lr = 0.1000 | loss: 1.5056 | error: 6591.0000 - valid | validloss: 1.5264 | validerror: 1702.0000 | s/iter: 26.6905
+	train | epoch = 13 | lr = 0.1000 | loss: 1.4802 | error: 6424.0000 - valid | validloss: 1.5710 | validerror: 1726.0000 | s/iter: 26.4441
+	train | epoch = 14 | lr = 0.1000 | loss: 1.4580 | error: 6359.0000 - valid | validloss: 1.5500 | validerror: 1701.0000 | s/iter: 26.5862
+	train | epoch = 15 | lr = 0.1000 | loss: 1.4465 | error: 6298.0000 - valid | validloss: 1.5099 | validerror: 1637.0000 | s/iter: 26.7205
+	train | epoch = 16 | lr = 0.1000 | loss: 1.4242 | error: 6187.0000 - valid | validloss: 1.5105 | validerror: 1680.0000 | s/iter: 26.9464
+	train | epoch = 17 | lr = 0.1000 | loss: 1.4533 | error: 6282.0000 - valid | validloss: 1.5728 | validerror: 1724.0000 | s/iter: 26.4836
+	train | epoch = 18 | lr = 0.1000 | loss: 1.4234 | error: 6176.0000 - valid | validloss: 1.5235 | validerror: 1673.0000 | s/iter: 26.8015
+	train | epoch = 19 | lr = 0.1000 | loss: 1.3263 | error: 5714.0000 - valid | validloss: 1.4950 | validerror: 1636.0000 | s/iter: 25.5398
+	train | epoch = 20 | lr = 0.1000 | loss: 1.2868 | error: 5519.0000 - valid | validloss: 1.5082 | validerror: 1665.0000 | s/iter: 25.3900
+	| test | error: 1634.0000
 
 
 nn.Sequential {

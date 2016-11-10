@@ -4,15 +4,6 @@ require 'torch'
 require 'env'
 require 'trepl'
 
---[[
-
-This file shows the modified example from the paper "Torchnet: An Open-Source Platform
-for (Deep) Learning Research".
-
-Revisions by Rob Fergus (fergus@cs.nyu.edu) and Christian Puhrsch (cpuhrsch@fb.com)
-Version 1.0 (10/14/16)
-
---]]
 
 local cmd = torch.CmdLine()
 cmd:option('-lr', 0.1, 'learning rate')
@@ -94,8 +85,8 @@ end
 local function getMnistIteratorFull(datasets)
     local listdatasets = {}
     for _, dataset in pairs(datasets) do
-       local list = torch.range(1, dataset.data:size(1)):totable()
-    --    local list = torch.range(1, 1000):totable()
+    --   local list = torch.range(1, dataset.data:size(1)):totable()
+        local list = torch.range(1, 1000):totable()
         table.insert(listdatasets,
                     tnt.ListDataset{
                         list = list,
@@ -260,7 +251,7 @@ end
 print(string.format('| test | error: %2.4f\n', testerrors))
 
 --  code for plotting weights
-
+--[[
 weights = network.weight
 n = weights:reshape(10,28,28)
 
@@ -269,4 +260,5 @@ for i=1,10 do
 	table.insert(files, n[i])
 end
 
-image.savePNG("weight_1000.png", image.toDisplayTensor{input = files, padding = 2})
+image.savePNG("weightFull1000.png", image.toDisplayTensor{input = files, padding = 2})
+--]]

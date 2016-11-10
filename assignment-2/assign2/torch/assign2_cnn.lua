@@ -4,15 +4,6 @@ require 'torch'
 require 'env'
 require 'trepl'
 
---[[
-
-This file shows the modified example from the paper "Torchnet: An Open-Source Platform
-for (Deep) Learning Research".
-
-Revisions by Rob Fergus (fergus@cs.nyu.edu) and Christian Puhrsch (cpuhrsch@fb.com)
-Version 1.0 (10/14/16)
-
---]]
 
 local cmd = torch.CmdLine()
 cmd:option('-lr', 0.1, 'learning rate')
@@ -237,6 +228,9 @@ print(string.format('| test | error: %2.4f\n', testerrors))
 --  code for plotting weights
 print(cnn)
 print(#cnn:getParameters())
+
+torch.save("cnn.t7", cnn:clearState())
+
 weights = cnn:get(1).weight
 
 image.savePNG("weight_cnn.png", image.toDisplayTensor{input = weights, padding = 2})

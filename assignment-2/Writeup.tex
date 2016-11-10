@@ -46,14 +46,20 @@ Visualization of the network weights for both models:
 \begin{subfigure}{.5\textwidth}
 \centering
 \includegraphics{assign2/torch/weight_1000.png}
-\caption{Weights for 1000 examples\label{fig3}}
+\caption{With 1000 training examples\label{fig3}}
 \end{subfigure}
 \begin{subfigure}{.5\textwidth}
 \centering
 \includegraphics{assign2/torch/weight_50.png}
-\caption{Weights for 50 examples\label{fig4}}
+\caption{With 50 training examples\label{fig4}}
 \end{subfigure}
 \end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{assign2/torch/weight50-1000.png}
+\caption{Training on 50 examples and using 1000 instances in validation and test set. \label{fig5}}
+\end{figure}
+Training with just 50 examples leads to overfitting. The model converges very early as it has very less features to learn. On the other hand, the valid and test error are huge, since the model does not generalize to different inputs. As we see that the test error in case of 1000 instances is less than using the full test set since the model is able to generalize to some instances present in the smaller test set.
 
 4.(a)
 \begin{figure}[H]
@@ -68,7 +74,8 @@ Visualization of the network weights for both models:
 \includegraphics[scale=0.5]{assign2/torch/outputLR10.png}
 \caption{ \label{fig5}}
 \end{figure}
-Due to high learning rate, the model keeps on jumping back and forth in the curve. The \\
+Due to high learning rate (10), the model keeps on jumping back and forth in the "well" by taking large steps and it will take very far more epochs to converge near the minima. If we compare the answer with (a) where the learning rate is 0.1, we see that it gradually progress towards the minima by taking small steps.
+\\
 5.(a)
 \begin{figure}[H]
 \centering
