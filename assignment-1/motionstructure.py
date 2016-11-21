@@ -70,3 +70,4 @@ ax = Axes3D(fig)
 ax.scatter(np.array(S[0]).ravel(), np.array(S[1]).ravel(), np.array(S[2]).ravel())
 pyplot.savefig("worldobject.jpg")
 # pyplot.show()
+
