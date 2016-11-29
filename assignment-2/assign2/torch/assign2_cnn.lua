@@ -68,10 +68,10 @@ local function getMnistIterator(datasets)
             dataset = tnt.ShuffleDataset{
                dataset = tnt.TransformDataset{
                     transform = function(x)
-		       return {
-			  input  = x.input:view(-1):double(),
-			  target = torch.LongTensor{x.target + 1}
-                        }
+		                    return {
+	                            input  = x.input:view(-1):double(),
+		                        target = torch.LongTensor{x.target + 1}
+                            }
                     end,
                     dataset = tnt.ConcatDataset{
                         datasets = listdatasets
