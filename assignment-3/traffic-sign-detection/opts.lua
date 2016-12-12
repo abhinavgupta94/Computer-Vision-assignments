@@ -8,7 +8,7 @@ function M.parse(arg)
     cmd:text('Options:')
     cmd:option('-data',             '',             'Path to dataset')
     cmd:option('-val',              10,             'Percentage to use for validation set')
-    cmd:option('-nEpochs',          300,            'Maximum epochs')
+    cmd:option('-nEpochs',          30,             'Maximum epochs')
     cmd:option('-batchsize',        128,            'Batch size for epochs')
     cmd:option('-nThreads',         1,              'Number of dataloading threads')
     cmd:option('-manualSeed',       '0',            'Manual seed for RNG')
@@ -19,10 +19,11 @@ function M.parse(arg)
     cmd:option('-model',            '',             'Model to use for training')
     cmd:option('-verbose',          'false',        'Print stats for every batch')
     cmd:option('-sub',              '',             'Submission file')
-    --[[
-    -- Hint: Use this option to convert your code to use GPUs
-    --]]
-    -- cmd:option('-cuda',            '',             'Use cuda tensor')
+    cmd:option('-cuda',             'false',        'Use cuda tensor')
+    cmd:option('-jitters',          5,              'Number of jitters to be added')
+    cmd:option('-reload',           'false',        'Reload data')
+    cmd:option('-psize',            32,             'Size of image')
+    cmd:option('-crop',             'false',        'Cropping enabled')
 
     local opt = cmd:parse(arg or {})
 
